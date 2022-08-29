@@ -6,7 +6,7 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # tomcat
-./apache-tomcat-9.0.65/**
+apache-tomcat-9.0.65/**
 
 
 # User-specific stuff
