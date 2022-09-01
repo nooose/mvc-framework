@@ -18,7 +18,10 @@ MVC 프레임워크를 간단하게 만들어보자
 ## HTTP 요청/응답 메시지 구조
 - 클라이언트
   - 요청 메시지
-    - Request line
+    - Request line (`GET /calculate?operand1=11&operator=*&operand2=55 HTTP/1.1`)
+      - httpMethod (`GET`)
+      - path (`/calculate`)
+      - queryString (`operand1=11&operator=*&operand2=55`)
     - Header
     - Blank line
     - Body
