@@ -1,7 +1,5 @@
 package org.example;
 
-
-<<<<<<< HEAD
 import org.example.calculator.domain.Calculator;
 import org.example.calculator.domain.PositiveNumber;
 import org.slf4j.Logger;
