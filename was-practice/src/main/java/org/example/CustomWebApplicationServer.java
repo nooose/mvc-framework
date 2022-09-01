@@ -1,6 +1,7 @@
 package org.example;
 
 
+<<<<<<< HEAD
 import org.example.calculator.domain.Calculator;
 import org.example.calculator.domain.PositiveNumber;
 import org.slf4j.Logger;
@@ -10,6 +11,13 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
+=======
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
 
 public class CustomWebApplicationServer {
     private final int port;
