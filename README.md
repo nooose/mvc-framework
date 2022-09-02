@@ -1,6 +1,10 @@
 # mvc-framework
 MVC 프레임워크를 간단하게 만들어보자
 
+- [x] 계산기 기능 구현 
+- [x] HTTP 요청/응답 기능 구현 `was-practice`
+- [ ] 서블릿 인터페이스를 직접 구현
+
 # 환경
 - JDK 11
 - [apache-tomcat-9.0.65.tar.gz](https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.65/bin/apache-tomcat-9.0.65.tar.gz) 
@@ -76,5 +80,17 @@ MVC 프레임워크를 간단하게 만들어보자
 
 - WAS는 ServletContainer를 포함하는 개념
 - WAS는 매 요청마다 Thread Pool에서 기존 Thread를 사용
-- WAS의 주요 튜닝 포인트는 `max thread 수`
+- WAS의 주요 튜닝 포인트는 `max thread` 수
 - 대표적인 WAS는 **`Tomcat`**
+
+## Servlet Interface
+![사진3](pics/servlet.png)
+
+- 서블릿 컨테이너가 서블릿 인터페이스에 있는 메소드들을 호출함
+- 서블릿 생명주기와 관련된 메서드
+  - `init()`: 서블릿 생성 후 초기화 작업을 수행
+  - `service()`: 클라이언트 요청이 들어올 때 마다 서블릿 컨테이너가 호출하는 메서드
+  - `destroy()`: 서블릿 컨테이너가 종료될 때 호출
+- 서블릿 기타 메서드
+  - `getServletConfig()`: 서블릿 초기 설정 정보를 담고있는 객체를 반환
+  - `getServletInfo()`: 서블릿 정보를 반환
