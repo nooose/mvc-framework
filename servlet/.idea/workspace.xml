@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f730f6b-349e-4115-8c76-dff61c5b2fcc" name="Changes" comment="feat: Thread safety 예제 코드 작성&#10;&#10;Thread safety 하지 않은 코드를 작성 후 &#10;synchronized 키워드를 사용해 Thread safe한 코드로 변경함">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2E76vRQXCGxKwOs1V9wiHeUJ4zR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/Users/mz01-seongjh/study/mvc-framework/was-practice/src/main/java/org/example",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/example" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.calculator.tobe" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.WebApplicationServletLauncher">
+    <configuration name="RaceConditionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.counter.RaceConditionDemo" />
+      <module name="was-practice.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.counter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplicationServletLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.WebApplicationServletLauncher" />
+      <module name="servlet.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestLineTest.create" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.example.RequestLineTest.create&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RaceConditionDemo" />
+        <item itemvalue="HTTP Request.test | #1" />
+        <item itemvalue="Gradle.RequestLineTest.create" />
+        <item itemvalue="Application.WebApplicationServletLauncher" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f730f6b-349e-4115-8c76-dff61c5b2fcc" name="Changes" comment="" />
+      <created>1661934507546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661934507546</updated>
+      <workItem from="1661934511652" duration="3309000" />
+      <workItem from="1661996496458" duration="959000" />
+      <workItem from="1661997486557" duration="6451000" />
+      <workItem from="1662079274256" duration="5792000" />
+      <workItem from="1662091573310" duration="81000" />
+    </task>
+    <task id="LOCAL-00001" summary="build: logback, assertj 의존성 추가">
+      <created>1661936495407</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661936495407</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: 멀티 소켓 기능 구현">
+      <created>1661939010300</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661939010301</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: HTTP 테스트 파일 생성">
+      <created>1661939027845</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661939027845</updated>
+    </task>
+    <task id="LOCAL-00004" summary="build: assertj 라이브러리 추가&#10;&#10;testImplementation으로 변경">
+      <created>1661999867720</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661999867721</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test: http requestLine 테스트 코드 작성&#10;&#10;requestLine을 파싱하여 method, path, queryString 분리">
+      <created>1661999946769</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661999946769</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: http requestLine 파싱 기능 구현&#10;&#10;method, path, queryString으로 분리">
+      <created>1661999972771</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661999972771</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: http request response 기능 구현">
+      <created>1662025213697</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662025213697</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: * 연산자 추가">
+      <created>1662080529957</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662080529957</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: 사용자 요청마다 쓰레드로 처리하도록 처리">
+      <created>1662083520699</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662083520699</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: Thread Pool을 이용하여 안정적으로 처리하도록 변경&#10;&#10;사용자 요청마다 새로운 Thread를 생성하여 처리했기 때문에&#10;리소스가 낭비되었다.">
+      <created>1662083933270</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662083933270</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: Thread safety 예제 코드 작성&#10;&#10;Thread safety 하지 않은 코드를 작성 후 &#10;synchronized 키워드를 사용해 Thread safe한 코드로 변경함">
+      <created>1662086475134</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662086475134</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="build: logback, assertj 의존성 추가" />
+    <MESSAGE value="feat: 멀티 소켓 기능 구현" />
+    <MESSAGE value="feat: HTTP 테스트 파일 생성" />
+    <MESSAGE value="build: assertj 라이브러리 추가&#10;&#10;testImplementation으로 변경" />
+    <MESSAGE value="test: http requestLine 테스트 코드 작성&#10;&#10;requestLine을 파싱하여 method, path, queryString 분리" />
+    <MESSAGE value="feat: http requestLine 파싱 기능 구현&#10;&#10;method, path, queryString으로 분리" />
+    <MESSAGE value="feat: http request response 기능 구현" />
+    <MESSAGE value="fix: * 연산자 추가" />
+    <MESSAGE value="feat: 사용자 요청마다 쓰레드로 처리하도록 처리" />
+    <MESSAGE value="feat: Thread Pool을 이용하여 안정적으로 처리하도록 변경&#10;&#10;사용자 요청마다 새로운 Thread를 생성하여 처리했기 때문에&#10;리소스가 낭비되었다." />
+    <MESSAGE value="feat: Thread safety 예제 코드 작성&#10;&#10;Thread safety 하지 않은 코드를 작성 후 &#10;synchronized 키워드를 사용해 Thread safe한 코드로 변경함" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Thread safety 예제 코드 작성&#10;&#10;Thread safety 하지 않은 코드를 작성 후 &#10;synchronized 키워드를 사용해 Thread safe한 코드로 변경함" />
+  </component>
+</project>
