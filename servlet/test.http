@@ -1,1 +1,1 @@
-GET http://localhost:8080/calculate?operand1=20&operator=-&operand2=10
+GET http://localhost:8080/calculate?operand1=20&operator=%2b&operand2=10
