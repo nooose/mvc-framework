@@ -3,7 +3,7 @@ MVC 프레임워크를 간단하게 만들어보자
 
 - [x] 계산기 기능 구현 
 - [x] HTTP 요청/응답 기능 구현 `was-practice`
-- [ ] 서블릿 인터페이스를 직접 구현
+- [x] 서블릿 인터페이스를 직접 구현
 
 # 환경
 - JDK 11
@@ -94,3 +94,23 @@ MVC 프레임워크를 간단하게 만들어보자
 - 서블릿 기타 메서드
   - `getServletConfig()`: 서블릿 초기 설정 정보를 담고있는 객체를 반환
   - `getServletInfo()`: 서블릿 정보를 반환
+
+
+## GenericServlet
+- 인터페이스가 아닌 아닌 추상 클래스
+- `service()`만 구현하면 됨
+  - `init()`, `destroy()`, `getServletConfig()`, `getServletInfo()`은 필요한 경우에만 구현
+
+## HttpServlet
+- GeneriServlet과 다르게 Http 메서드마다 다르게 동작할 수 있도록 메서드를 지원한다.
+- `service()` 메서드 내에서 Http 메서드 요청에 따라 아래 메서드들을 호출한다.
+  - `doGet()`
+  - `doPost()`
+  - `doPut()`
+  - `doHead()`
+  - `doDelete()`
+- 따라서 오버라이드가 필요
+
+> URL 인코딩 (= 퍼센트 인코딩) <br>
+> - URL로 사용할 수 없는 문자(예약어, Non-ASCII 문자(한글) 등)를 사용할 수 있도록 인코딩
+> - 인코딩 된 문자는 triplet(세 개가 한 세트)로 인코딩 되며 각각을 % 다음에 두 개의 16진수로 표현
