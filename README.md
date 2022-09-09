@@ -4,6 +4,7 @@ MVC 프레임워크를 간단하게 만들어보자
 - [x] 계산기 기능 구현 
 - [x] HTTP 요청/응답 기능 구현 `was-practice`
 - [x] 서블릿 인터페이스를 직접 구현
+- [x] JDBC template 구현
 
 # 환경
 - JDK 11
@@ -135,3 +136,25 @@ MVC 프레임워크를 간단하게 만들어보자
 ## DataSource
 - 커넥션을 획득하기 위한 표준 인터페이스
 - ex) HikariCP DataSource
+
+
+# Reflection
+- Heap 영역에 로드돼 있는 클래스 타입의 객체를 통해 필드/메서드/생성자를 접근 제어자와 상관 없이 사용할 수 있도록 지원하는 API
+  - Heap 영역에 있는 클래스를 불러오는 3가지 방법
+    ```java
+    // 1
+    Class<User> clazz = User.class;
+
+    // 2
+    User user = new User("noose", "홍길동");
+    Class<? extends User> clazz2 = user.getClass();
+
+    // 3
+    Class<?> clazz3 = Class.forName("org.example.model.User");
+  ```
+- 컴파일 시점이 아닌 런타임 시점에 동적으로 특정 클래스의 정보를 추출해낼 수 있는 프로그래밍 기법
+- 주로 프레임워크 또는 라이브러리 개발 시 사용됨
+  - Spring 프레임워크 (ex. DI)
+  - Test 프레임워크 (ex. JUnit)
+  - JSON Serializaiton/Deserialization 라이브러리 (ex. Jackson)
+  - 등등
