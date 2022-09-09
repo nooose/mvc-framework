@@ -151,7 +151,12 @@ MVC 프레임워크를 간단하게 만들어보자
 
     // 3
     Class<?> clazz3 = Class.forName("org.example.model.User");
-  ```
+    
+    assertThat(clazz == clazz2).isTrue();
+    assertThat(clazz2 == clazz3).isTrue();
+    assertThat(clazz3 == clazz).isTrue();
+    ```
+
 - 컴파일 시점이 아닌 런타임 시점에 동적으로 특정 클래스의 정보를 추출해낼 수 있는 프로그래밍 기법
 - 주로 프레임워크 또는 라이브러리 개발 시 사용됨
   - Spring 프레임워크 (ex. DI)
