@@ -1,4 +1,4 @@
-package org.example.model;
+package org.example.mvc.model;
 
 import java.util.Objects;
 
@@ -9,6 +9,14 @@ public class User {
     public User(String userId, String name) {
         this.userId = userId;
         this.name = name;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public boolean equalsUser(User user) {
