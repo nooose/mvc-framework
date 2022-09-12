@@ -1,5 +1,7 @@
 package org.example.mvc.controller;
 
+import org.example.mvc.repository.UserRepository;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
@@ -8,8 +10,9 @@ public class UserListController implements Controller {
 
     @Override
     public String handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        request.setAttribute("users", List.of());
+        request.setAttribute("users", UserRepository.findAll());
+        System.out.println(UserRepository.findAll());
 
-        return "/user/list.jsp";
+        return "/user/list";
     }
 }

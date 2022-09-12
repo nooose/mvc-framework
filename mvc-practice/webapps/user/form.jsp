@@ -11,11 +11,11 @@
 <form method="post" action="/users">
     <div>
         <label for="userId">사용자 아이디</label>
-        <input class="form-control" id="userId" placeholder="User ID">
+        <input class="form-control" id="userId" name="userId" placeholder="User ID">
     </div>
     <div>
         <label for="name">이름</label>
-        <input class="form-control" id="name" placeholder="Name">
+        <input class="form-control" id="name" name="name" placeholder="Name">
     </div>
     <button type="submit">회원가입</button>
 </form>
