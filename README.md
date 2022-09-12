@@ -5,6 +5,8 @@ MVC 프레임워크를 간단하게 만들어보자
 - [x] HTTP 요청/응답 기능 구현 `was-practice`
 - [x] 서블릿 인터페이스를 직접 구현
 - [x] JDBC template 구현
+- [x] Reflection을 사용해 Annotation 만들어보기
+- [x] Annotation 기반 MVC 프레임워크
 
 # 환경
 - JDK 11
@@ -168,7 +170,7 @@ MVC 프레임워크를 간단하게 만들어보자
 # Front Controller Pattern
   - 모든 요청을 단일 handler(처리기)에서 처리하도록 하는 패턴
   - 스프링 웹 MVC 프레임워크의 DispathcerServlet(Front Controller 역할)이 Front Controller 패턴으로 구현돼 있음
-![사진5](pics/dispathcerservlet.png)
+![사진5](pics/dispatcherservlet.png)
   
 ## Forward vs Redirect
 ![사진6](pics/forward_redirect.png)
@@ -184,5 +186,18 @@ MVC 프레임워크를 간단하게 만들어보자
 - Redirect 방식은 클라이언트로부터 새로운 요청이기 때문에 새로운 `HttpServletRequest`, `HttpServletResponse` 객체가 생성됨
 - `HttpServletResponse` 객체의 `sendRedirect()` 이용
 
-## DispathcerServlet
-![사진6](pics/dispathcerservlet1.png)
+# 스프링 웹 MVC 프레임워크
+![사진6](pics/mvc.png)
+
+# DI (Dependency Injection)
+- 의존성 주입
+  - 한 객체가 다른 객체를 사용할 때 의존성이 있다고 한다.
+- 런타임 시 의존 관계를 맺는 대상을 외부에서 결정하고 주입해 주는 것
+- 스프링 프레임워크는 DI 기능을 지원해주는 프레임워크
+
+## DI 장점
+- 구체 클래스를 직접 의존하기 보다 의존성 주입을 인터페이스 기반으로 설계하면, 코드가 유연해진다.
+  - 느슨한 결합도 (loose coupling)
+- 변경에 유연해짐
+  - 결합도가 낮은 객체끼리는 부품을 쉽게 갈아끼울 수 있다.
+- 테스트하기 좋은 코드가 될 수 있다.
