@@ -183,3 +183,6 @@ MVC 프레임워크를 간단하게 만들어보자
 - 서블릿이 클라이언트(웹 브라우저)를 다시 거쳐 다른 서블릿(JSP)에게 요청하는 방식
 - Redirect 방식은 클라이언트로부터 새로운 요청이기 때문에 새로운 `HttpServletRequest`, `HttpServletResponse` 객체가 생성됨
 - `HttpServletResponse` 객체의 `sendRedirect()` 이용
+
+## DispathcerServlet
+![사진6](pics/dispathcerservlet1.png)
